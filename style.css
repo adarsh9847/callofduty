@@ -1,0 +1,627 @@
+body{
+    margin: 0;
+    background-color: black;
+    padding-top: 50px;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* header css start */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(backgrounds/global-nav-bg.png);
+    background-size: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Montserrat, Arial;
+    font-size: 12px;
+    list-style: none;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.list-tag p{
+    color: #969696;
+}
+
+.list-tag{
+    padding: 18px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.list-tag img{
+    width: 11px;
+    height: 9px;
+    margin-left: 13px;
+    transition: transform .25s ease-in;
+}
+
+.back-black:hover{
+    background-color: black;
+    border-bottom: 2px solid black;
+    padding-top: 20px;
+}
+
+.list-tag:hover img {
+    transform: rotate(-0.50turn);
+}
+
+.list-tag:hover p{
+    color: #B99739;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo img{
+    width: 105px;
+    display: block;
+    color: white;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.cod-login{
+    display: flex;
+    align-items: center;
+    color: #969696;
+    font-family: Montserrat, Arial;
+    font-size: 12px;
+    padding: 19px 15px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+.cod-login p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.purchase{
+    color: rgb(255, 255, 255);
+    font-family: Fjalla,arial;
+    font-weight: 600;
+    padding: 14px 15px;
+    background-color: rgb(113, 175, 58);
+    border: 2px solid #71af3a;
+    text-shadow: 0px 0px 10px #000000;
+    letter-spacing: .8px;
+}
+/* header css end */
+
+/* cod-background section css start */
+
+.cod-background{
+    position: relative;
+    height: 670px;
+    background-image: url(backgrounds/cod-background.jpg);
+    background-size: cover;
+}
+
+.video-playback{
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-family: Montserrat, Arial;
+    text-transform: uppercase;
+}
+
+.season3-img img{
+    width: 360px;
+}
+
+.season3-img{
+    margin-bottom: 20px;
+}
+
+.video-first-text{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.video-sec-text{
+    color: #DBBE2F;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.video-play{
+    width: 340px;
+    border: 1px solid white;
+}
+
+.playbutton{
+    position: absolute;
+    top: 350px;
+}
+/* cod background section css end */
+
+/* championship css start */
+
+.championship{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.championship-left{
+    position: relative;
+    overflow: hidden;
+    width: 66.66%;
+    height: 370px;
+    text-transform: uppercase;
+}
+
+.championship-left-img{
+    background-image: url(backgrounds/championship-left.jpg);
+    background-size: cover;
+    height: 370px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.championship-left-img:hover{
+    transform: scale(1.05);
+}
+
+.championship-contents{
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: teko;
+}
+
+.championship-image{
+    margin-bottom: 30px;
+}
+
+.championship-image img{
+    width: 300px;
+}
+
+.las-vegas{
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: .6px;
+    transform: scale(1,1.2);
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.las-vegas span{
+    font-weight: 500;
+}
+
+.get-details{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    transform: scale(1,1.2);
+}
+
+.championship-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.right-img{
+    height: 300px;
+    overflow: hidden;
+}
+
+.right-img img{
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-img img:hover{
+    transform: scale(1.05);
+}
+
+.MW:hover+.right-img img{
+    transform: scale(1.05);
+}
+
+
+.MW{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+}
+
+.mw-logo img{
+    height: 37px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.mw-details{
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat,arial;
+    text-transform: uppercase;
+    padding-right: 15px;
+    font-weight: 400;
+}
+
+/* championship css end */
+
+/* cod diff css start */
+
+.cod-diff{
+    display: flex;
+}
+
+/* cod diff css end */
+
+/* latest news css start */
+
+.latest-news{
+    border-top: 1px solid #525252;
+    border-bottom: 1px solid #525252;
+    margin-top: 80px;
+    height: 325px;
+}
+
+.news-header{
+    border-bottom: 1px solid #525252;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    display: flex;
+    color: white;
+    font-family: Montserrat,arial;
+}
+
+.inner-header-right{
+    display: flex;
+    align-items: center;
+}
+
+.inner-header-left{
+    text-transform: uppercase;
+}
+
+.flbtn{
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: #a9a6a1;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.all-btn{
+    background-image: none;
+}
+
+.view-all{
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn1{
+    background-image: url(logos/latest-news/MW.svg);
+    width: 34px;
+    height: 10px;
+}
+
+.filter-btn2{
+    background-image: url(logos/latest-news/wz2-icon.png);
+    width: 30px;
+    height: 15px;
+}
+
+.filter-btn3{
+    background-image: url(logos/latest-news/wzm.png);
+    width: 28px;
+    height: 15px;
+}
+
+.filter-btn4{
+    background-image: url(logos/latest-news/M\ YELLOW.png);
+    width: 18px;
+    height: 21px;
+}
+
+.filter-btn5{
+    background-image: url(logos/latest-news/vg-icon-white.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.filter-btn6{
+    background-image: url(logos/latest-news/FEATHER.png);
+    width: 36px;
+    height: 24px;
+    margin-bottom: -13px;
+}
+
+.news-content{
+    padding-bottom: 20px;
+}
+
+.news-slider{
+    margin-bottom: 30px;
+}
+
+.news-slider-drag{
+    display: grid;
+    grid-auto-flow: column;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    column-gap: 15px;
+}
+
+.news-slider-drag::-webkit-scrollbar{
+    height: 10px;
+}
+
+.news-slider-drag::-webkit-scrollbar-thumb{
+    background-color: #969696;
+    border-radius: 50px;
+}
+
+.news-main{
+    width: 276px;
+    height: 230px;
+}
+
+.news-image{
+    height: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.news-image img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-image img:hover{
+    transform: scale(1.10);
+}
+
+.news-title{
+    color: white;
+    font-family: Montserrat,arial;
+    font-size: 15px;
+}
+
+/* latest news css end */
+
+/* get the game css*/
+
+.get-the-game{
+    padding:80px 148px 40px 148px;
+}
+
+.get-title{
+    font-size: 24px;
+    margin-bottom: 64px;
+    color: #969696;
+    font-family: Montserrat,arial;
+    text-align: center;
+}
+
+.game-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-game{
+    position: relative;
+    width: 295px;
+    height: 295px;
+    border: 1px solid #B99739;;
+}
+
+.single-game img{
+    height: 100%;
+}
+
+.game-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 41px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    color: #a59d95;;
+    font-family: Montserrat,arial;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price-game{
+    color: white;
+    font-family: Montserrat,arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+}
+
+
+/* get the game css end*/
+
+/* footer css */
+
+.inner-footer{
+    margin-left: 310px;
+    margin-right: 310px;
+    margin-top: 45px;
+    padding: 100px 35px;
+}
+
+.footer-links{
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    color:  #adabab;
+    font-family: Montserrat,arial;
+    text-transform: uppercase;
+    border-bottom: 1px solid #787171;
+}
+
+.footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 13px;
+    padding: 0;
+}
+
+.footer-logos{
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer-logos-left{
+    width: 50%;
+}
+
+.footer-logos-left ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.activision{
+    width: 115px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.shg{
+    width: 60px;
+    margin-bottom: 20px;
+    padding: 0 36px;
+}
+
+li img{
+    width: 100%;
+}
+
+.footer-logos-right{
+    width: 48%;
+}
+
+.footer-logos-right ul{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.privacy{
+    width: 88px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.mature{
+    height: 153px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-family: Montserrat,arial;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cookie-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-btn button{
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+
+/* footer css end*/
